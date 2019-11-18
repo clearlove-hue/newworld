@@ -3,66 +3,91 @@
 #include<stdbool.h>
 #include<stdlib.h>
 #include<time.h>
-//面试题10   猫生崽
 
+
+
+
+
+
+
+
+
+
+//面试题10   猫生崽(斐波那契数列)
+//int Fib(int x)
+//{
+//	if (x == 1 || x == 2) {
+//		return 1;
+//	}return (Fib(x - 1) + Fib(x - 2));
+//}
 //int main()
 //{
-//	int i = 1; int i2 = 1; int i3 = 1; int i4 = 1; int i1 = 1;
-//	int x = 12;
-//	int a=0;
-//	int b=0;
-//	int c = 0;
-//	int d=0;
-//	int e = 0;/**/
-//	
-//	int x1 = x - 2; for (i; x1 > 0;++i) {
-//		
-//		x1 -= 1;
-//		
-//		
-//	}  a = --i; printf("%d\n", a);
-//
-//	
-//	int x2 = x - 4; for (i1; x2 > 0;++i1) {
-//		
-//		
-//		x2 -= 1;
-//		
-//	} b = --i1;printf("%d\n", b);
-//	
-//	int x3 = x - 6; for (i2; x3 > 0;++i2) {
-//		
-//		
-//		x3 -= 1;
-//		
-//	} c = --i2;printf("%d\n", c);
-//	
-//	int x4 = x - 8; for (i4; x4 > 0;++i4) {
-//		
-//		
-//		x4 -= 1;
-//		
-//	} d =-- i4;printf("%d\n", d);
-//	
-//	int x5 = x - 10; for (i3; x5 > 0;++i3) {
-//		
-//		
-//		x5 -= 1;
-//		
-//	} e = --i3;printf("%d\n", e);
-//          
-//
-//
-//	int y =a+b+c+d+e+2;
-//	
-//		
-//	printf("%d\n", y*2);
+//	int i, y;
+//	printf("请输入时间（几个月）:>");
+//	scanf_s("%d", &i);
+//	y = Fib(i - 1) + Fib(i - 2);
+//	printf("%d", y);
 //}
 
 
 
-
-
+//void menu(){
+//printf("**********************\n");
+//printf("******1.开始游戏******\n");
+//printf("******0.退出游戏******\n");
+//printf("**********************\n");
+//  
+//}
+//void game()
+//{
+//	int guess = 0;
+//	int ret;
+//	//printf("猜数字\n");
+//	ret = rand()%100+1;
+//	//printf("%d\n", &ret);
+//	while (1)
+//	{
+//		printf("请输入要猜的数字:>");
+//		scanf_s("%d", &guess);
+//		if (guess < ret)
+//		{
+//			printf("猜小了\n");
+//		}
+//		else if (guess > ret)
+//		{
+//			printf("猜大了\n");
+//		}
+//		else
+//		{
+//			printf("恭喜你，猜对了\n");
+//			break;
+//		}
+//	}
+//}
+//int main()
+//{
+//	int input;
+//	srand((unsigned int)time(NULL));
+//	do
+//	{
+//		menu();
+//		printf("请选择:>");
+//		scanf_s("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			game();
+//			break;
+//		case 0:
+//			printf("退出游戏\n");
+//			break;
+//		default:
+//			printf("选择错误\n");
+//			break;
+//		}
+//	} while (input);
+//	return 0;
+//}
 
 
 
@@ -319,15 +344,15 @@
 
 
 //面试题9
-int main()
-{
-	
-	
-	
-	
-	
-	
-}
+//int main()
+//{
+//	
+//	
+//	
+//	
+//	
+//	
+//}
 
 
 
@@ -353,9 +378,9 @@ int main()
 //int main()
 //{
 //	
-//	double x;
+//	float x;//double
 //	printf("请输入所需验证数字:>");
-//	scanf_s("%lf", &x);
+//	scanf_s("%f", &x);//%lf
 //	if (x == 1)
 //	{
 //		printf("通过申请\n");
@@ -608,66 +633,9 @@ int main()
 
 
 //
-//void menu()
-//{
-//printf("**********************\n");
-//printf("******1.开始游戏******\n");
-//printf("******0.退出游戏******\n");
-//printf("**********************\n");
-//  
-//}
-//void game()
-//{
-//	int guess = 0;
-//	int ret;
-//	//printf("猜数字\n");
-//	ret = rand()%100+1;
-//	//printf("%d\n", &ret);
-//	while (1)
-//	{
-//		printf("请输入要猜的数字:>");
-//		scanf_s("%d", &guess);
-//		if (guess < ret)
-//		{
-//			printf("猜小了\n");
-//		}
-//		else if (guess > ret)
-//		{
-//			printf("猜大了\n");
-//		}
-//		else
-//		{
-//			printf("恭喜你，猜对了\n");
-//			break;
-//		}
-//	}
-//}
-//int main()
-//{
-//	int input;
-//	srand((unsigned int)time(NULL));
-//	do
-//	{
-//		menu();
-//		printf("请选择:>");
-//		scanf_s("%d", &input);
-//		switch (input)
-//		{
-//		case 1:
-//			game();
-//			break;
-//		case 0:
-//			printf("退出游戏\n");
-//			break;
-//		default:
-//			printf("选择错误\n");
-//			break;
-//		}
-//	} while (input);
-//	return 0;
-//}
+//
 
-
+//判断是否为平年
 //bool IsLeap(int year)
 //{
 //	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
@@ -702,7 +670,7 @@ int main()
 
 
 //
-//
+//判断是否为素数
 //bool IsPrime(int value)
 //{
 //	for (int i = 2; i < value;++i)//i设置以2开头，因为素数定义为除1和它本身外其余均不能整除情况。
@@ -815,7 +783,7 @@ int main()
 
 
 
-
+//阶乘
 //int Factorial(int n)
 //{
 //	if (n == 1)
