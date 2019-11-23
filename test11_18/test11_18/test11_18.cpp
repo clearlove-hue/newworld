@@ -24,22 +24,22 @@
 
 
 //斐波那契数列
-//int fib(int x)
-//{
-//	if (x == 1||x == 2)return 1;
-//	
-//	return fib(x - 1) + fib(x - 2);
-//	
-//}
-//
-//
-//int main()
-//{
-//	int n,y;
-//	printf("请输入需要求第几项:>");
-//	scanf_s("%d", &n);
-//	y = fib(n);
-//	printf("%d\n", y);
-//	int z=fib(n+2)-1;
-//  printf("数列的前%d项和为%d\n",n,z);
-//}
+int fib(int x)
+{
+	if (x == 1||x == 2)return 1;
+	
+	return fib(x - 1) + fib(x - 2);
+	
+}
+
+
+int main()
+{
+	int n,y;
+	printf("请输入需要求第几项:>");
+	scanf_s("%d", &n);
+	y = fib(n);
+	printf("%d\n", y);
+	/*int z=fib(n+2)-1;
+  printf("数列的前%d项和为%d\n",n,z);*/
+}
